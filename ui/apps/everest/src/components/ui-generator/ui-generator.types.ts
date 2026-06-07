@@ -108,10 +108,7 @@ export type SelectFieldParams =
 export interface ToggleFieldParams extends CommonFieldParams {
   labelCaption?: string;
   switchFieldProps?: SwitchProps;
-  formControlLabelProps?: Omit<
-    FormControlLabelProps,
-    'control' | 'label'
-  >;
+  formControlLabelProps?: Omit<FormControlLabelProps, 'control' | 'label'>;
 }
 
 export interface TextFieldParams extends CommonFieldParams {

@@ -23,8 +23,13 @@ export const buildFieldProps = (
   mappedProps: MappedFieldProps,
   isDisabled: boolean
 ): Record<string, unknown> => {
-  const { badge, textFieldProps, selectFieldProps, switchFieldProps, ...restMappedProps } =
-    mappedProps;
+  const {
+    badge,
+    textFieldProps,
+    selectFieldProps,
+    switchFieldProps,
+    ...restMappedProps
+  } = mappedProps;
 
   const finalTextFieldProps = buildTextFieldProps(
     textFieldProps,

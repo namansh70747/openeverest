@@ -140,8 +140,7 @@ const ExpandableClampedText = ({
     [lineClamp]
   );
 
-  const showExpandInline =
-    hasOverflow && !useModalForExpand && !expandedInline;
+  const showExpandInline = hasOverflow && !useModalForExpand && !expandedInline;
   const showCollapseInline =
     hasOverflow && !useModalForExpand && expandedInline;
   const showModalExpand = hasOverflow && useModalForExpand;
@@ -244,7 +243,9 @@ const ExpandableClampedText = ({
         {...dialogProps}
       >
         <DialogTitle>{title}</DialogTitle>
-        <DialogContent sx={{ pt: 1, overflow: 'auto', maxHeight: 'calc(90vh - 140px)' }}>
+        <DialogContent
+          sx={{ pt: 1, overflow: 'auto', maxHeight: 'calc(90vh - 140px)' }}
+        >
           <Typography
             component="div"
             sx={{
